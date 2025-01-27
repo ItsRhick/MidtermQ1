@@ -10,7 +10,7 @@
 
 <h2>Currency Pipes</h2>
 <p>Default Currency: {{ price | currency }}</p>
-<p>USD Standard:  {{ 42.42 | currencry:'USD':'symbol' }}</p>
+<p>USD Standard:  {{ 42.42 | currency:'USD':'symbol' }}</p>
 <p>USD With Currency Code: {{ 42.42 | currency:'USD':'code' }}</p>
 <p>INR Format: {{ 242.42 | currency:'INR':'symbol' }}</p>
 <p>GBP Format: {{ 42.42 | currency:'GBP':'symbol' }}</p>
@@ -23,4 +23,9 @@
 <h2>JSON Pipes</h2>
 
 <h2>Slice Pipes</h2>
+<p>Middle Elements: {{ array | slice:3:6 }}</p>
+<p>Negative Start: {{ array | slice:-3 }} </p>
+<p>Last Two Characters: {{ string | slice: -2 }}</p>
+<p>First Five Characters: {{ string | slice:0:5 }}</p>
+
 </div>
